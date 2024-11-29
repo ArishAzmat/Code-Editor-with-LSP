@@ -5,7 +5,7 @@ import { LogLevel } from 'vscode/services';
 // import { MonacoLanguageClient } from 'monaco-languageclient';
 // import { createUrl } from 'monaco-languageclient/tools';
 import { toSocket, WebSocketMessageReader, WebSocketMessageWriter } from 'vscode-ws-jsonrpc';
-import { configureMonacoWorkers } from './common/utils.js';
+// import { configureMonacoWorkers } from './common/utils.js';
 import { createUrl } from './common/tool.js';
 
 export function createUserConfig(workspaceRoot, code, codeUri) {
@@ -81,7 +81,7 @@ export function createUserConfig(workspaceRoot, code, codeUri) {
                     uri: codeUri
                 }
             },
-            monacoWorkerFactory: configureMonacoWorkers
+            // monacoWorkerFactory: configureMonacoWorkers
         }
     };
 }
